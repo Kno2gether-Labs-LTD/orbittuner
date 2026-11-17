@@ -1,0 +1,26 @@
+{title: Auld Lang Syne}
+{artist: Robert Burns}
+{key: D}
+{tempo: 90}
+{time: 4/4}
+
+{start_of_verse: Verse 1}
+Should [D]auld ac[G]quaintance be for[D]got
+And [D]never [Bm]brought to [Em]mind [A]
+Should [D]auld ac[G]quaintance be for[D]got
+And [G]auld lang [A]syne [D]
+{end_of_verse}
+
+{start_of_chorus}
+For [D]auld lang [G]syne, my [D]jo
+For [D]auld lang [Bm]syne [A]
+We'll [D]tak a cup o' [G]kindness [D]yet
+For [G]auld lang [A]syne [D]
+{end_of_chorus}
+
+{start_of_verse: Verse 2}
+And [D]surely [G]ye'll be your [D]pint-stowp
+And [D]surely [Bm]I'll be [Em]mine [A]
+And [D]we'll tak a [G]cup o' kind[D]ness yet
+For [G]auld lang [A]syne [D]
+{end_of_verse}

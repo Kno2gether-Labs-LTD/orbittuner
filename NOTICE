@@ -1,0 +1,20 @@
+OrbitTuner
+Copyright 2026 Kno2gether Labs LTD and OrbitTuner contributors
+https://kno2gether.com · https://orbitapps.space
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product uses the following third-party components:
+
+- AndroidX, Jetpack Compose, Room, DataStore, WorkManager and Credential Manager (https://developer.android.com/jetpack) - Apache License 2.0.
+- Google Identity Services for Android (googleid) - Apache License 2.0.
+- Kotlin, kotlinx.coroutines and kotlinx.serialization (https://kotlinlang.org) - Apache License 2.0.
+- OkHttp (https://square.github.io/okhttp/) - Apache License 2.0.
+- Chord shapes from chords-db (https://github.com/tombatossals/chords-db) - MIT License (app/src/main/assets/chords/CHORDS-LICENSE.txt).
+- Fractional indexing, after rocicorp/fractional-indexing - MIT License (app/src/main/assets/licenses).
+- Literata and Schibsted Grotesk fonts - SIL Open Font License 1.1 (app/src/main/assets/licenses).
+- Hono (https://hono.dev) - MIT License.
+- fflate (https://github.com/101arrowz/fflate) - MIT License.
+
+OrbitTuner is an independent project, not affiliated with or endorsed by any other tuner,
+chord or music app, or any chord website. Product names are trademarks of their owners.

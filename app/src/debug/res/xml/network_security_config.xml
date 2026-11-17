@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  DEBUG builds only (src/debug). Cleartext is allowed for every host because the Settings > Developer host override
+  may point at a dev server on the emulator (10.0.2.2), localhost or a private LAN IPv4 (10/8, 172.16/12, 192.168/16),
+  and network-security-config can't express IP ranges (no CIDR). The app itself still only uses http for those hosts
+  (ServiceHost.baseUrl); everything else is https. Release builds have no config, so the platform default (no
+  cleartext since targetSdk 28) applies.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

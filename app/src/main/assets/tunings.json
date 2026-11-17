@@ -1,0 +1,1287 @@
+{
+ "_comment": "Notes in each tuning are listed lowest to highest PITCH (scientific pitch notation, # or b accidentals, middle C = C4), not physical string order. Re-entrant instruments are therefore reordered: ukulele high-G (G4) sits between E4 and A4, and the banjo 5th string (G4) is last. Courses of identical pitch (12-string octave pairs, balalaika unison pair) are listed once. Matching a detected pitch to a string is done by pitch distance, never by index. Shamisen pitch is relative; root C is a convention and the offset control moves it.",
+ "instruments": [
+  {
+   "id": "guitar",
+   "name": "Guitar (acoustic)",
+   "category": "guitar",
+   "strings": 6,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "E2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "half-step-down",
+     "name": "Half step down (E♭)",
+     "notes": [
+      "Eb2",
+      "Ab2",
+      "Db3",
+      "Gb3",
+      "Bb3",
+      "Eb4"
+     ]
+    },
+    {
+     "id": "whole-step-down",
+     "name": "Whole step down",
+     "notes": [
+      "D2",
+      "G2",
+      "C3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    },
+    {
+     "id": "c-tuning",
+     "name": "C tuning",
+     "notes": [
+      "C2",
+      "F2",
+      "Bb2",
+      "Eb3",
+      "G3",
+      "C4"
+     ]
+    },
+    {
+     "id": "drop-d",
+     "name": "Drop D",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "drop-csharp",
+     "name": "Drop C♯",
+     "notes": [
+      "C#2",
+      "G#2",
+      "C#3",
+      "F#3",
+      "A#3",
+      "D#4"
+     ]
+    },
+    {
+     "id": "drop-c",
+     "name": "Drop C",
+     "notes": [
+      "C2",
+      "G2",
+      "C3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    },
+    {
+     "id": "drop-b",
+     "name": "Drop B",
+     "notes": [
+      "B1",
+      "F#2",
+      "B2",
+      "E3",
+      "G#3",
+      "C#4"
+     ]
+    },
+    {
+     "id": "drop-a",
+     "name": "Drop A",
+     "notes": [
+      "A1",
+      "E2",
+      "A2",
+      "D3",
+      "F#3",
+      "B3"
+     ]
+    },
+    {
+     "id": "double-drop-d",
+     "name": "Double Drop D",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "D4"
+     ]
+    },
+    {
+     "id": "dadgad",
+     "name": "DADGAD",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "G3",
+      "A3",
+      "D4"
+     ]
+    },
+    {
+     "id": "open-a",
+     "name": "Open A",
+     "notes": [
+      "E2",
+      "A2",
+      "E3",
+      "A3",
+      "C#4",
+      "E4"
+     ]
+    },
+    {
+     "id": "open-am",
+     "name": "Open Am",
+     "notes": [
+      "E2",
+      "A2",
+      "E3",
+      "A3",
+      "C4",
+      "E4"
+     ]
+    },
+    {
+     "id": "open-c",
+     "name": "Open C",
+     "notes": [
+      "C2",
+      "G2",
+      "C3",
+      "G3",
+      "C4",
+      "E4"
+     ]
+    },
+    {
+     "id": "open-d",
+     "name": "Open D",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "F#3",
+      "A3",
+      "D4"
+     ]
+    },
+    {
+     "id": "open-dm",
+     "name": "Open Dm",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    },
+    {
+     "id": "open-e",
+     "name": "Open E",
+     "notes": [
+      "E2",
+      "B2",
+      "E3",
+      "G#3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "open-em",
+     "name": "Open Em",
+     "notes": [
+      "E2",
+      "B2",
+      "E3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "open-f",
+     "name": "Open F",
+     "notes": [
+      "C2",
+      "F2",
+      "C3",
+      "F3",
+      "A3",
+      "F4"
+     ]
+    },
+    {
+     "id": "open-g",
+     "name": "Open G",
+     "notes": [
+      "D2",
+      "G2",
+      "D3",
+      "G3",
+      "B3",
+      "D4"
+     ]
+    },
+    {
+     "id": "slack-key",
+     "name": "Slack key (taro patch)",
+     "notes": [
+      "D2",
+      "G2",
+      "D3",
+      "G3",
+      "B3",
+      "D4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "electric-guitar",
+   "name": "Guitar (electric)",
+   "category": "guitar",
+   "strings": 6,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "E2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "half-step-down",
+     "name": "Half step down (E♭)",
+     "notes": [
+      "Eb2",
+      "Ab2",
+      "Db3",
+      "Gb3",
+      "Bb3",
+      "Eb4"
+     ]
+    },
+    {
+     "id": "whole-step-down",
+     "name": "Whole step down",
+     "notes": [
+      "D2",
+      "G2",
+      "C3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    },
+    {
+     "id": "c-tuning",
+     "name": "C tuning",
+     "notes": [
+      "C2",
+      "F2",
+      "Bb2",
+      "Eb3",
+      "G3",
+      "C4"
+     ]
+    },
+    {
+     "id": "drop-d",
+     "name": "Drop D",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "drop-csharp",
+     "name": "Drop C♯",
+     "notes": [
+      "C#2",
+      "G#2",
+      "C#3",
+      "F#3",
+      "A#3",
+      "D#4"
+     ]
+    },
+    {
+     "id": "drop-c",
+     "name": "Drop C",
+     "notes": [
+      "C2",
+      "G2",
+      "C3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    },
+    {
+     "id": "drop-b",
+     "name": "Drop B",
+     "notes": [
+      "B1",
+      "F#2",
+      "B2",
+      "E3",
+      "G#3",
+      "C#4"
+     ]
+    },
+    {
+     "id": "drop-a",
+     "name": "Drop A",
+     "notes": [
+      "A1",
+      "E2",
+      "A2",
+      "D3",
+      "F#3",
+      "B3"
+     ]
+    },
+    {
+     "id": "double-drop-d",
+     "name": "Double Drop D",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "D4"
+     ]
+    },
+    {
+     "id": "dadgad",
+     "name": "DADGAD",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "G3",
+      "A3",
+      "D4"
+     ]
+    },
+    {
+     "id": "open-a",
+     "name": "Open A",
+     "notes": [
+      "E2",
+      "A2",
+      "E3",
+      "A3",
+      "C#4",
+      "E4"
+     ]
+    },
+    {
+     "id": "open-am",
+     "name": "Open Am",
+     "notes": [
+      "E2",
+      "A2",
+      "E3",
+      "A3",
+      "C4",
+      "E4"
+     ]
+    },
+    {
+     "id": "open-c",
+     "name": "Open C",
+     "notes": [
+      "C2",
+      "G2",
+      "C3",
+      "G3",
+      "C4",
+      "E4"
+     ]
+    },
+    {
+     "id": "open-d",
+     "name": "Open D",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "F#3",
+      "A3",
+      "D4"
+     ]
+    },
+    {
+     "id": "open-dm",
+     "name": "Open Dm",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    },
+    {
+     "id": "open-e",
+     "name": "Open E",
+     "notes": [
+      "E2",
+      "B2",
+      "E3",
+      "G#3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "open-em",
+     "name": "Open Em",
+     "notes": [
+      "E2",
+      "B2",
+      "E3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "open-f",
+     "name": "Open F",
+     "notes": [
+      "C2",
+      "F2",
+      "C3",
+      "F3",
+      "A3",
+      "F4"
+     ]
+    },
+    {
+     "id": "open-g",
+     "name": "Open G",
+     "notes": [
+      "D2",
+      "G2",
+      "D3",
+      "G3",
+      "B3",
+      "D4"
+     ]
+    },
+    {
+     "id": "slack-key",
+     "name": "Slack key (taro patch)",
+     "notes": [
+      "D2",
+      "G2",
+      "D3",
+      "G3",
+      "B3",
+      "D4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "guitar-7",
+   "name": "7-string guitar",
+   "category": "guitar",
+   "strings": 7,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "B1",
+      "E2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "half-step-down",
+     "name": "Half step down",
+     "notes": [
+      "Bb1",
+      "Eb2",
+      "Ab2",
+      "Db3",
+      "Gb3",
+      "Bb3",
+      "Eb4"
+     ]
+    },
+    {
+     "id": "drop-a",
+     "name": "Drop A",
+     "notes": [
+      "A1",
+      "E2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "russian",
+     "name": "Russian guitar",
+     "notes": [
+      "D2",
+      "G2",
+      "B2",
+      "D3",
+      "G3",
+      "B3",
+      "D4"
+     ]
+    },
+    {
+     "id": "brazilian",
+     "name": "Brazilian guitar",
+     "notes": [
+      "C2",
+      "E2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "guitar-12",
+   "name": "12-string guitar",
+   "category": "guitar",
+   "strings": 12,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "E2",
+      "A2",
+      "D3",
+      "E3",
+      "G3",
+      "A3",
+      "B3",
+      "D4",
+      "E4",
+      "G4"
+     ]
+    },
+    {
+     "id": "half-step-down",
+     "name": "Half step down",
+     "notes": [
+      "Eb2",
+      "Ab2",
+      "Db3",
+      "Eb3",
+      "Gb3",
+      "Ab3",
+      "Bb3",
+      "Db4",
+      "Eb4",
+      "Gb4"
+     ]
+    },
+    {
+     "id": "drop-d",
+     "name": "Drop D",
+     "notes": [
+      "D2",
+      "A2",
+      "D3",
+      "G3",
+      "A3",
+      "B3",
+      "D4",
+      "E4",
+      "G4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bass-4",
+   "name": "Bass (4-string)",
+   "category": "bass",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "E1",
+      "A1",
+      "D2",
+      "G2"
+     ]
+    },
+    {
+     "id": "half-step-down",
+     "name": "Half step down",
+     "notes": [
+      "Eb1",
+      "Ab1",
+      "Db2",
+      "Gb2"
+     ]
+    },
+    {
+     "id": "whole-step-down",
+     "name": "Whole step down",
+     "notes": [
+      "D1",
+      "G1",
+      "C2",
+      "F2"
+     ]
+    },
+    {
+     "id": "drop-d",
+     "name": "Drop D",
+     "notes": [
+      "D1",
+      "A1",
+      "D2",
+      "G2"
+     ]
+    },
+    {
+     "id": "drop-c",
+     "name": "Drop C",
+     "notes": [
+      "C1",
+      "G1",
+      "C2",
+      "F2"
+     ]
+    },
+    {
+     "id": "tenor",
+     "name": "Tenor (high C)",
+     "notes": [
+      "A1",
+      "D2",
+      "G2",
+      "C3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bass-5",
+   "name": "Bass (5-string)",
+   "category": "bass",
+   "strings": 5,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard (low B)",
+     "notes": [
+      "B0",
+      "E1",
+      "A1",
+      "D2",
+      "G2"
+     ]
+    },
+    {
+     "id": "high-c",
+     "name": "High C",
+     "notes": [
+      "E1",
+      "A1",
+      "D2",
+      "G2",
+      "C3"
+     ]
+    },
+    {
+     "id": "drop-a",
+     "name": "Drop A",
+     "notes": [
+      "A0",
+      "E1",
+      "A1",
+      "D2",
+      "G2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "double-bass",
+   "name": "Double bass",
+   "category": "orchestral",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Orchestral",
+     "notes": [
+      "E1",
+      "A1",
+      "D2",
+      "G2"
+     ]
+    },
+    {
+     "id": "solo",
+     "name": "Solo",
+     "notes": [
+      "F#1",
+      "B1",
+      "E2",
+      "A2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ukulele",
+   "name": "Ukulele",
+   "category": "ukulele",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "soprano-c",
+     "name": "Soprano in C",
+     "notes": [
+      "C4",
+      "E4",
+      "G4",
+      "A4"
+     ]
+    },
+    {
+     "id": "soprano-d",
+     "name": "Soprano in D",
+     "notes": [
+      "D4",
+      "F#4",
+      "A4",
+      "B4"
+     ]
+    },
+    {
+     "id": "low-g",
+     "name": "Low G",
+     "notes": [
+      "G3",
+      "C4",
+      "E4",
+      "A4"
+     ]
+    },
+    {
+     "id": "baritone",
+     "name": "Baritone",
+     "notes": [
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "banjo",
+   "name": "Banjo (5-string)",
+   "category": "banjo",
+   "strings": 5,
+   "tunings": [
+    {
+     "id": "open-g",
+     "name": "Standard (open G)",
+     "notes": [
+      "D3",
+      "G3",
+      "B3",
+      "D4",
+      "G4"
+     ]
+    },
+    {
+     "id": "double-c",
+     "name": "Double C",
+     "notes": [
+      "C3",
+      "G3",
+      "C4",
+      "D4",
+      "G4"
+     ]
+    },
+    {
+     "id": "sawmill",
+     "name": "Sawmill (G modal)",
+     "notes": [
+      "D3",
+      "G3",
+      "C4",
+      "D4",
+      "G4"
+     ]
+    },
+    {
+     "id": "open-d",
+     "name": "Open D",
+     "notes": [
+      "D3",
+      "F#3",
+      "A3",
+      "D4",
+      "F#4"
+     ]
+    },
+    {
+     "id": "g-minor",
+     "name": "G minor",
+     "notes": [
+      "D3",
+      "G3",
+      "Bb3",
+      "D4",
+      "G4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "banjo-4",
+   "name": "Banjo (4-string)",
+   "category": "banjo",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "tenor",
+     "name": "Tenor",
+     "notes": [
+      "C3",
+      "G3",
+      "D4",
+      "A4"
+     ]
+    },
+    {
+     "id": "irish-tenor",
+     "name": "Irish tenor",
+     "notes": [
+      "G2",
+      "D3",
+      "A3",
+      "E4"
+     ]
+    },
+    {
+     "id": "chicago",
+     "name": "Chicago",
+     "notes": [
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    },
+    {
+     "id": "plectrum",
+     "name": "Plectrum",
+     "notes": [
+      "C3",
+      "G3",
+      "B3",
+      "D4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mandolin",
+   "name": "Mandolin",
+   "category": "mandolin",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "G3",
+      "D4",
+      "A4",
+      "E5"
+     ]
+    },
+    {
+     "id": "half-step-down",
+     "name": "Half step down",
+     "notes": [
+      "Gb3",
+      "Db4",
+      "Ab4",
+      "Eb5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mandola",
+   "name": "Mandola",
+   "category": "mandolin",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "C3",
+      "G3",
+      "D4",
+      "A4"
+     ]
+    },
+    {
+     "id": "octave",
+     "name": "Octave mandolin",
+     "notes": [
+      "G2",
+      "D3",
+      "A3",
+      "E4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "violin",
+   "name": "Violin",
+   "category": "orchestral",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "G3",
+      "D4",
+      "A4",
+      "E5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "viola",
+   "name": "Viola",
+   "category": "orchestral",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "C3",
+      "G3",
+      "D4",
+      "A4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cello",
+   "name": "Cello",
+   "category": "orchestral",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "C2",
+      "G2",
+      "D3",
+      "A3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fiddle",
+   "name": "Fiddle",
+   "category": "orchestral",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "G3",
+      "D4",
+      "A4",
+      "E5"
+     ]
+    },
+    {
+     "id": "cajun",
+     "name": "Cajun",
+     "notes": [
+      "F3",
+      "C4",
+      "G4",
+      "D5"
+     ]
+    },
+    {
+     "id": "cross",
+     "name": "Cross tuning (AEAE)",
+     "notes": [
+      "A3",
+      "E4",
+      "A4",
+      "E5"
+     ]
+    },
+    {
+     "id": "calico",
+     "name": "Calico (AEAC#)",
+     "notes": [
+      "A3",
+      "E4",
+      "A4",
+      "C#5"
+     ]
+    },
+    {
+     "id": "high-bass",
+     "name": "High bass (ADAE)",
+     "notes": [
+      "A3",
+      "D4",
+      "A4",
+      "E5"
+     ]
+    },
+    {
+     "id": "gee-dad",
+     "name": "Gee-dad (GDAD)",
+     "notes": [
+      "G3",
+      "D4",
+      "A4",
+      "D5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cavaquinho",
+   "name": "Cavaquinho",
+   "category": "other",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "brazilian",
+     "name": "Brazilian (DGBD)",
+     "notes": [
+      "D4",
+      "G4",
+      "B4",
+      "D5"
+     ]
+    },
+    {
+     "id": "portuguese",
+     "name": "Portuguese (DABE)",
+     "notes": [
+      "D4",
+      "A4",
+      "B4",
+      "E5"
+     ]
+    },
+    {
+     "id": "brazilian-solo",
+     "name": "Brazilian solo (DGBE)",
+     "notes": [
+      "D4",
+      "G4",
+      "B4",
+      "E5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "balalaika",
+   "name": "Balalaika",
+   "category": "other",
+   "strings": 3,
+   "tunings": [
+    {
+     "id": "prima",
+     "name": "Prima",
+     "notes": [
+      "E4",
+      "A4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "oud",
+   "name": "Oud",
+   "category": "other",
+   "strings": 6,
+   "tunings": [
+    {
+     "id": "arabic",
+     "name": "Arabic",
+     "notes": [
+      "C2",
+      "F2",
+      "A2",
+      "D3",
+      "G3",
+      "C4"
+     ]
+    },
+    {
+     "id": "turkish",
+     "name": "Turkish",
+     "notes": [
+      "E2",
+      "A2",
+      "B2",
+      "E3",
+      "A3",
+      "D4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pipa",
+   "name": "Pipa",
+   "category": "other",
+   "strings": 4,
+   "tunings": [
+    {
+     "id": "standard",
+     "name": "Standard",
+     "notes": [
+      "A2",
+      "D3",
+      "E3",
+      "A3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shamisen",
+   "name": "Shamisen",
+   "category": "other",
+   "strings": 3,
+   "tunings": [
+    {
+     "id": "honchoshi",
+     "name": "Honchōshi (root C)",
+     "notes": [
+      "C3",
+      "F3",
+      "C4"
+     ]
+    },
+    {
+     "id": "niagari",
+     "name": "Niagari (root C)",
+     "notes": [
+      "C3",
+      "G3",
+      "C4"
+     ]
+    },
+    {
+     "id": "sansagari",
+     "name": "Sansagari (root C)",
+     "notes": [
+      "C3",
+      "F3",
+      "Bb3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "keyboard",
+   "name": "Keyboard",
+   "category": "chromatic",
+   "chromatic": true,
+   "tunings": []
+  },
+  {
+   "id": "voice",
+   "name": "Voice",
+   "category": "chromatic",
+   "chromatic": true,
+   "tunings": []
+  },
+  {
+   "id": "chromatic",
+   "name": "Chromatic",
+   "category": "chromatic",
+   "chromatic": true,
+   "tunings": []
+  }
+ ]
+}

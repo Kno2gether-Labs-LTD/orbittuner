@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Mockup logo (100-unit tile) scaled x0.75 about the centre; everything stays inside the 66dp safe zone. -->
+    <!-- Copper orbit ring. -->
+    <path android:pathData="M54.0,33.75 a20.25,20.25 0 1,1 0,40.5 a20.25,20.25 0 1,1 0,-40.5 Z"
+        android:strokeWidth="11.25">
+        <aapt:attr name="android:strokeColor">
+            <gradient android:type="linear"
+                android:startX="33.75" android:startY="33.75"
+                android:endX="74.25" android:endY="74.25">
+                <item android:offset="0" android:color="#FFFFD29A" />
+                <item android:offset="0.5" android:color="#FFFF8A5C" />
+                <item android:offset="1" android:color="#FFE0455A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Tuning fork. -->
+    <path android:pathData="M49.125,42.938 V51.188 A4.875,4.875 0 0,0 58.875,51.188 V42.938"
+        android:strokeColor="#FFFFFFFF" android:strokeWidth="3.9"
+        android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M54.0,56.062 V65.062"
+        android:strokeColor="#FFFFFFFF" android:strokeWidth="3.9"
+        android:strokeLineCap="round" />
+    <!-- Planet at one o'clock: faint halo + glowing body. -->
+    <path android:pathData="M61.5,36.75 a6.75,6.75 0 1,0 13.5,0 a6.75,6.75 0 1,0 -13.5,0 Z"
+        android:fillColor="#FFFFC48F" android:fillAlpha="0.25" />
+    <path android:pathData="M63.375,36.75 a4.875,4.875 0 1,0 9.75,0 a4.875,4.875 0 1,0 -9.75,0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial"
+                android:centerX="67.275" android:centerY="35.288"
+                android:gradientRadius="6.825">
+                <item android:offset="0" android:color="#FFFFF4E4" />
+                <item android:offset="0.55" android:color="#FFFFC48F" />
+                <item android:offset="1" android:color="#FFFF8A5C" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

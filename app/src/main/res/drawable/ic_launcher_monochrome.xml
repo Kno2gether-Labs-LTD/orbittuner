@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Themed-icon silhouette: ring (notched around the planet so it reads as separate) + fork + planet. -->
+    <path android:pathData="M75.033,38.930 A25.875,25.875 0 1,1 64.829,30.500 A7.125,7.125 0 1,0 75.033,38.930 Z M54.0,39.375 a14.625,14.625 0 1,1 0,29.250 a14.625,14.625 0 1,1 0,-29.250 Z" android:fillColor="#FF000000" android:fillType="evenOdd" />
+    <path android:pathData="M49.125,42.938 V51.188 A4.875,4.875 0 0,0 58.875,51.188 V42.938"
+        android:strokeColor="#FF000000" android:strokeWidth="3.9"
+        android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M54.0,56.062 V65.062"
+        android:strokeColor="#FF000000" android:strokeWidth="3.9"
+        android:strokeLineCap="round" />
+    <path android:pathData="M63.375,36.75 a4.875,4.875 0 1,0 9.75,0 a4.875,4.875 0 1,0 -9.75,0 Z" android:fillColor="#FF000000" />
+</vector>

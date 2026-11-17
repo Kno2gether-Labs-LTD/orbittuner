@@ -1,0 +1,28 @@
+{
+  "name": "orbittuner",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-10-01",
+  // Portal stylesheet, browser script and seed songs (.cho) are imported as text and served by the Worker.
+  "rules": [{ "type": "Text", "globs": ["**/*.css", "**/*.client.js", "**/*.cho"], "fallthrough": false }],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "orbittuner",
+      // Placeholder: paste the id printed by `wrangler d1 create orbittuner` (see README).
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [{ "binding": "FILES", "bucket_name": "orbittuner-files" }],
+  // Bulk link imports: one message per URL ({jobId, idx}); see src/ai/jobs.ts.
+  "queues": {
+    "producers": [{ "binding": "IMPORT_QUEUE", "queue": "orbittuner-import" }],
+    "consumers": [{ "queue": "orbittuner-import", "max_batch_size": 2, "max_retries": 2 }]
+  },
+  // Workers AI: Whisper transcription for POST /v1/voice (src/voice/transcribe.ts).
+  "ai": { "binding": "AI" },
+  "vars": { "PUBLIC_HOST": "tuner.orbitapps.space" },
+  "routes": [{ "pattern": "tuner.orbitapps.space", "custom_domain": true }]
+  // Secrets (not stored here; see README): SETUP_TOKEN, SECRETS_KEY, INWORLD_API_KEY, OPENAI_API_KEY, APIFY_TOKEN.
+  // Local dev: service/.env (git-ignored, read by wrangler); INWORLD_BASE_URL is an optional dev-only override.
+}
