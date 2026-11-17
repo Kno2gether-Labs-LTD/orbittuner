@@ -1,6 +1,7 @@
 package dev.avijit.orbittuner.metronome
 
 import android.content.Context
+import android.os.Looper
 import androidx.test.core.app.ApplicationProvider
 import dev.avijit.orbittuner.settings.Prefs
 import kotlinx.coroutines.Dispatchers
@@ -21,6 +22,7 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.Shadows.shadowOf
 import java.util.UUID
 
 /** Records what the view model asks of the engine; [set] updates [state] like the real one. */
@@ -49,9 +51,18 @@ class MetronomeViewModelTest {
 
     private fun vm(engine: Metronome = FakeMetronome()) = MetronomeViewModel(engine, prefs, { now })
 
-    /** The view model reads Prefs off the main thread; wait (real time) for it to land. */
-    private fun until(cond: () -> Boolean) = runBlocking {
-        withTimeout(5_000) { while (!cond()) kotlinx.coroutines.delay(5) }
+    /**
+     * The view model reads and writes Prefs from its main-thread scope; wait (real time) for that to land. The test
+     * runs on Robolectric's main thread, so blocking it without idling the main looper would starve any work
+     * posted there (a DataStore edit resumes on the caller's dispatcher) and the wait would time out.
+     */
+    private fun until(cond: suspend () -> Boolean) = runBlocking {
+        withTimeout(5_000) {
+            while (!cond()) {
+                shadowOf(Looper.getMainLooper()).idle()
+                kotlinx.coroutines.delay(5)
+            }
+        }
     }
 
     @Test fun nudgeClampsAtTheTop() {
@@ -88,12 +99,7 @@ class MetronomeViewModelTest {
         val vm = vm()
         until { vm.loaded }
         vm.nudge(5); vm.nudge(1); vm.setBeats(6)
-        runBlocking {
-            withTimeout(5_000) {
-                prefs.metronomeBpm.first { it == 86 }
-                prefs.metronomeBeats.first { it == 6 }
-            }
-        }
+        until { prefs.metronomeBpm.first() == 86 && prefs.metronomeBeats.first() == 6 }
         val e2 = FakeMetronome()
         val again = vm(e2)
         until { again.loaded }
@@ -127,7 +133,7 @@ class MetronomeViewModelTest {
         assertEquals(80 to 4, e.state.value.bpm to e.state.value.beatsPerBar)
         // The next nudge saves the Tools value, not the song's.
         tools.nudge(1)
-        runBlocking { withTimeout(5_000) { prefs.metronomeBpm.first { it == 81 } } }
+        until { prefs.metronomeBpm.first() == 81 }
     }
 
     @Test fun restoreKeepsAccentAndLeavesAPlayingEngineAlone() {
